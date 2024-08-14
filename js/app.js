@@ -54,7 +54,7 @@ async function getCurrencyData(){
         })
 
 
-        newOriginCurrencyOption.addEventListener("touch", ()=>{
+        newOriginCurrencyOption.addEventListener("touchstart", ()=>{
             conversion_rate_inner_container.style.display = "block";
 
             origin_currency_name_conversion.textContent = newOriginCurrencyOption.textContent;
@@ -63,7 +63,7 @@ async function getCurrencyData(){
             alert("here1");
             selectedOriginCurrency = Number(newOriginCurrencyOption.value)
         })
-        
+
 
         newConvertedCurrencyOption.textContent = response.data[x].code;
         newConvertedCurrencyOption.setAttribute("value", response.data[x].value.toFixed(3));
@@ -81,7 +81,7 @@ async function getCurrencyData(){
         })
 
 
-        newConvertedCurrencyOption.addEventListener("touch", ()=>{
+        newConvertedCurrencyOption.addEventListener("touchstart", ()=>{
             conversion_rate_inner_container.style.display = "block";
 
             converted_currency_name_conversion.textContent = newConvertedCurrencyOption.textContent;
