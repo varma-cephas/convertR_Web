@@ -54,7 +54,7 @@ async function getCurrencyData(){
         })
 
 
-        newOriginCurrencyOption.addEventListener("change", ()=>{
+        newOriginCurrencyOption.addEventListener("keyup", ()=>{
             conversion_rate_inner_container.style.display = "block";
 
             origin_currency_name_conversion.textContent = newOriginCurrencyOption.textContent;
@@ -81,7 +81,7 @@ async function getCurrencyData(){
         })
 
 
-        newConvertedCurrencyOption.addEventListener("change", ()=>{
+        newConvertedCurrencyOption.addEventListener("keyup", ()=>{
             conversion_rate_inner_container.style.display = "block";
 
             converted_currency_name_conversion.textContent = newConvertedCurrencyOption.textContent;
