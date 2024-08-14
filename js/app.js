@@ -53,6 +53,18 @@ async function getCurrencyData(){
             selectedOriginCurrency = Number(newOriginCurrencyOption.value)
         })
 
+
+        newOriginCurrencyOption.addEventListener("touch", ()=>{
+            conversion_rate_inner_container.style.display = "block";
+
+            origin_currency_name_conversion.textContent = newOriginCurrencyOption.textContent;
+            origin_currency_amount_conversion_rate.textContent = newOriginCurrencyOption.value;
+
+            alert("here1");
+            selectedOriginCurrency = Number(newOriginCurrencyOption.value)
+        })
+        
+
         newConvertedCurrencyOption.textContent = response.data[x].code;
         newConvertedCurrencyOption.setAttribute("value", response.data[x].value.toFixed(3));
         newConvertedCurrencyOption.setAttribute("class", `converted_currency_${response.data[x].code.toLowerCase()}`)
@@ -67,6 +79,19 @@ async function getCurrencyData(){
             alert("here2");
             selected_converted_currency = Number(newConvertedCurrencyOption.value);
         })
+
+
+        newConvertedCurrencyOption.addEventListener("touch", ()=>{
+            conversion_rate_inner_container.style.display = "block";
+
+            converted_currency_name_conversion.textContent = newConvertedCurrencyOption.textContent;
+            converted_currency_amount_conversion_rate.textContent = newConvertedCurrencyOption.value;
+
+            alert("here2");
+            selected_converted_currency = Number(newConvertedCurrencyOption.value);
+        })
+
+
 
         back_home_button.addEventListener("click", ()=>{
             input_amount_container.style.display = "block";
