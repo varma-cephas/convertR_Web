@@ -125,6 +125,7 @@ let selectedValue;
 
 testForm.addEventListener("submit", (event)=>{
     // inputText.textContent = inputField.value;
+    alert(inputField.value)
     event.preventDefault();
 })
 
