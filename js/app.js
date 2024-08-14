@@ -109,11 +109,11 @@ testForm.addEventListener("submit", (event)=>{
 })
 
 opt1.addEventListener("click", ()=>{
-   inputText.textContent =  opt1.value
+   window.location.reload();
 })
 
 opt2.addEventListener("click", ()=>{
-    inputText.textContent =  opt2.value
+    window.location.reload();
  })
 
 
