@@ -159,12 +159,17 @@ testForm.addEventListener("submit", (event)=>{
     event.preventDefault();
 })
 
-opt1.addEventListener("click", ()=>{
-   window.location.reload();
-})
+// opt1.addEventListener("click", ()=>{
+//    window.location.reload();
+// })
 
-opt2.addEventListener("click", ()=>{
-    window.location.reload();
- })
+// opt2.addEventListener("click", ()=>{
+//     window.location.reload();
+//  })
+
+inputField.addEventListener("change", ()=>{
+    alert(inputField.value);
+    alert("hello")
+})
 
 
