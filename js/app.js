@@ -95,4 +95,13 @@ async function getCurrencyData(){
 getCurrencyData();
 
 
+const testForm = document.querySelector(".testForm");
+const inputText = document.querySelector(".inputText");
+const inputField = document.querySelector(".inputField");
+
+testForm.addEventListener("submit", ()=>{
+    inputField.textContent = inputField.value;
+})
+
+
 
