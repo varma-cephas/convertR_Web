@@ -49,6 +49,7 @@ async function getCurrencyData(){
             origin_currency_name_conversion.textContent = newOriginCurrencyOption.textContent;
             origin_currency_amount_conversion_rate.textContent = newOriginCurrencyOption.value;
 
+            alert("here1");
             selectedOriginCurrency = Number(newOriginCurrencyOption.value)
         })
 
@@ -63,6 +64,7 @@ async function getCurrencyData(){
             converted_currency_name_conversion.textContent = newConvertedCurrencyOption.textContent;
             converted_currency_amount_conversion_rate.textContent = newConvertedCurrencyOption.value;
 
+            alert("here2");
             selected_converted_currency = Number(newConvertedCurrencyOption.value);
         })
 
