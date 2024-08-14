@@ -1,4 +1,3 @@
-const convert_button = document.querySelector(".convert_button");
 const input_amount = document.querySelector(".input_amount");
 
 const origin_currency_value_container = document.querySelector(".origin_currency_value_container");
@@ -67,7 +66,7 @@ async function getCurrencyData(){
             selected_converted_currency = Number(newConvertedCurrencyOption.value);
         })
 
-        convert_button.addEventListener("click", ()=>{
+        country_currency_container.addEventListener("submit", (event)=>{
             if(Number(input_amount.value) > 0){
                 input_amount_container.style.display = "none";
                 country_currency_container.style.display = "none";
@@ -76,6 +75,7 @@ async function getCurrencyData(){
                 back_home_button.style.display = "block";
                 convertedAmount = `${((Number(input_amount.value) / selectedOriginCurrency) * selected_converted_currency).toFixed(5)} ${converted_currency_name_conversion.textContent}`;
                 currency_amount.textContent = convertedAmount;
+                event.preventDefault();
             }
             else{
                 alert("Please enter a valid amount")

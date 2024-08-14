@@ -21,33 +21,33 @@
                 <input class="input_amount"  type="number" placeholder="Amount">
             </div>
         </div>
-        <div class="country_currency_container">
-           <div class="country_currency_inner_container">
-                <div class="origin_currency">
-                    <select class="origin_currency_value_container" name="" id="">
-                       
-                    </select>
-                </div>
-                <img class="arrow_svg" src="./assets/right_arrow.svg" alt="arrow_svg">
-                <div class="converted_currency">
-                    <select class="converted_currency_value_container" name="" id="">
+        <form class="country_currency_container">
+            <div class="country_currency_inner_container">
+                    <div class="origin_currency">
+                        <select class="origin_currency_value_container" name="" id="">
                         
-                    </select>
-                </div>
-           </div>
-        </div>
-        <div class="conversion_rate_container">
-            <h3>Conversion Rate</h3>
-            <div class="conversion_rate_inner_container">
-                <span class="origin_currency_amount_conversion_rate"></span> <span class="origin_currency_name_conversion"></span> = 
-                <span class="converted_currency_amount_conversion_rate"></span> <span class="converted_currency_name_conversion"></span>
+                        </select>
+                    </div>
+                    <img class="arrow_svg" src="./assets/right_arrow.svg" alt="arrow_svg">
+                    <div class="converted_currency">
+                        <select class="converted_currency_value_container" name="" id="">
+                            
+                        </select>
+                    </div>
             </div>
-        </div>
-        <div>
-           <div class="convert_button__inner_container">
-                <p class="convert_button">Convert</p>
-           </div>
-        </div>
+            <div class="conversion_rate_container">
+                <h3>Conversion Rate</h3>
+                <div class="conversion_rate_inner_container">
+                    <span class="origin_currency_amount_conversion_rate"></span> <span class="origin_currency_name_conversion"></span> = 
+                    <span class="converted_currency_amount_conversion_rate"></span> <span class="converted_currency_name_conversion"></span>
+                </div>
+            </div>
+            <div>
+            <div class="convert_button__inner_container">
+                    <input type="submit" value="Convert Button" class="convert_button">
+            </div>
+            </div>
+        </form>
         <div>
             <div class="back_home_button_container">
                 <img class="arrow_svg back_home_button" src="./assets/left_arrow.svg" alt="">
