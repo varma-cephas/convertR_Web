@@ -98,15 +98,22 @@ getCurrencyData();
 const testForm = document.querySelector(".testForm");
 const inputText = document.querySelector(".inputText");
 const inputField = document.querySelector(".inputField");
+const opt1 = document.querySelector(".opt1");
+const opt2 = document.querySelector(".opt2");
+
+let selectedValue;
 
 testForm.addEventListener("submit", (event)=>{
-    inputText.textContent = inputField.value;
+    // inputText.textContent = inputField.value;
     event.preventDefault();
 })
 
-inputField.addEventListener("click", ()=>{
-    inputText.textContent = inputField.value;
+opt1.addEventListener("click", ()=>{
+   inputText.textContent =  opt1.value
 })
 
+opt2.addEventListener("click", ()=>{
+    inputText.textContent =  opt2.value
+ })
 
 
