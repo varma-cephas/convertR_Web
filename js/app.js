@@ -104,5 +104,9 @@ testForm.addEventListener("submit", (event)=>{
     event.preventDefault();
 })
 
+inputField.addEventListener("click", ()=>{
+    inputText.textContent = inputField.value;
+})
+
 
 
