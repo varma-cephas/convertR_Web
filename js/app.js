@@ -81,24 +81,27 @@ getCurrencyData();
 
 
 
-country_currency_container.addEventListener("submit", (event)=>{
-    if(Number(input_amount.value) > 0){
-        input_amount_container.style.display = "none";
-        country_currency_container.style.display = "none";
-        convert_button__inner_container.style.display = "none";
-        converted_concurrency_amount_container.style.display = "block";
-        back_home_button.style.display = "block";
-        convertedAmount = `${((Number(input_amount.value) / selectedOriginCurrency) * selected_converted_currency).toFixed(5)} ${converted_currency_name_conversion.textContent}`;
-        currency_amount.textContent = convertedAmount;
-        alert(Number(input_amount.value));
-        alert(selectedOriginCurrency);
-        alert(selected_converted_currency)
-        event.preventDefault();
-    }
-    else{
-        alert("Please enter a valid amount");
-    }
-})
+setTimeout(()=>{
+    country_currency_container.addEventListener("submit", (event)=>{
+        if(Number(input_amount.value) > 0){
+            input_amount_container.style.display = "none";
+            country_currency_container.style.display = "none";
+            convert_button__inner_container.style.display = "none";
+            converted_concurrency_amount_container.style.display = "block";
+            back_home_button.style.display = "block";
+            convertedAmount = `${((Number(input_amount.value) / selectedOriginCurrency) * selected_converted_currency).toFixed(5)} ${converted_currency_name_conversion.textContent}`;
+            currency_amount.textContent = convertedAmount;
+            alert(Number(input_amount.value));
+            alert(selectedOriginCurrency);
+            alert(selected_converted_currency)
+            event.preventDefault();
+        }
+        else{
+            alert("Please enter a valid amount");
+            event.preventDefault();
+        }
+    })
+},2000)
 
 
 
