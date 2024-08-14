@@ -99,8 +99,9 @@ const testForm = document.querySelector(".testForm");
 const inputText = document.querySelector(".inputText");
 const inputField = document.querySelector(".inputField");
 
-testForm.addEventListener("submit", ()=>{
+testForm.addEventListener("submit", (event)=>{
     inputField.textContent = inputField.value;
+    event.preventDefault();
 })
 
 
